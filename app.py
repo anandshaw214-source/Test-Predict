@@ -7,6 +7,10 @@ model = pickle.load(open('model.pkl', 'rb'))
 
 @app.route('/')
 def home():
+    return "I am doing Good, How are you doing today!!!!"
+
+@app.route('/index')
+def home():
     return render_template('index.html')
 
 @app.route('/predict',methods=['POST'])
