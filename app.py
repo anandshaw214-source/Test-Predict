@@ -10,7 +10,7 @@ def home():
     return "I am doing Good, How are you doing today!!!!"
 
 @app.route('/index')
-def home():
+def homeindex():
     return render_template('index.html')
 
 @app.route('/predict',methods=['POST'])
